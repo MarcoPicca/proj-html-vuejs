@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div id="img-bg-header">
         <NavBar />
   </div>
 </template>
@@ -24,6 +24,13 @@
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
+  #img-bg-header{
+    background-image: url(../assets/img/avada-nightclub-home-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+  }
 </style>
