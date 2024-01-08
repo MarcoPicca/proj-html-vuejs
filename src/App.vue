@@ -1,7 +1,7 @@
 <script>
  // 1 IMPORTO I COMPONENTI CHE UTILIZZERO'  -->
     import AppHeader from './components/AppHeader.vue';
-    // import AppMain from './components/AppMain.vue';
+    import AppMain from './components/AppMain.vue';
     // import AppFooter from './components/AppFooter';
    
 
@@ -28,7 +28,7 @@
 
         components: {
           AppHeader,
-          // AppMain,
+          AppMain
           // AppFooter
         }
           
@@ -37,10 +37,10 @@
 
 <template>
   <AppHeader />
-<!--   
+  
   <AppMain />
   
-  <AppFooter /> -->
+  <!-- <AppFooter /> -->
 </template>
 
 <style lang="scss">
