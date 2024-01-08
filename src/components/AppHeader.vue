@@ -1,4 +1,12 @@
+<template>
+  <div >
+        <NavBar />
+  </div>
+</template>
+
 <script>
+  import NavBar from './particles/NavBar.vue';
+
   export default {
     name: 'AppHeader',
 
@@ -8,15 +16,13 @@
     },
     methods: {
         
+    },
+    components: {
+      NavBar
     }
 }
 </script>
 
-<template>
-  <div >
-        
-  </div>
-</template>
 
 <style scoped>
 
