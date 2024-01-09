@@ -16,9 +16,7 @@
         return {
         }
     },
-    methods: {
-        
-    },
+    
     components: {
       NavBar,
       MainHeader

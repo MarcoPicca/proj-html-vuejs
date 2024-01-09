@@ -64,6 +64,8 @@ export default {
         top: 124px;
     }
 
+    
+
     .img-footer-header{
         width: 17%;
     }
