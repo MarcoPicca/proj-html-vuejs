@@ -43,25 +43,25 @@ export default {
     }
 
     .dance-lounge{
-        background-image: url(../../assets/img/avada-nightclub-dancelounge-small.jpg);
+        background-image: url(../../../assets/img/avada-nightclub-dancelounge-small.jpg);
         background-position: center;
         background-size: cover;
     }
 
     .rooftop-bar{
-        background-image: url(../../assets/img/avada-nightclub-rooftoplounge-small.jpg);
+        background-image: url(../../../assets/img/avada-nightclub-rooftoplounge-small.jpg);
         background-position: center;
         background-size: cover;
     }
 
     .vip-lounge{
-        background-image: url(../../assets/img/avada-nightclub-viplounge-small.jpg);
+        background-image: url(../../../assets/img/avada-nightclub-viplounge-small.jpg);
         background-position: center;
         background-size: cover;
     }
 
     .resident-dj{
-        background-image: url(../../assets/img/avada-nightclub-events-small.jpg);
+        background-image: url(../../../assets/img/avada-nightclub-events-small.jpg);
         background-position: center;
         background-size: cover;
     }

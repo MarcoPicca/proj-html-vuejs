@@ -40,15 +40,15 @@ export default {
     .container-dj-card:hover{
         border-top: 4px solid #f63c81;
     }
-
+    
     .resident-dj{
-        background-image: url(../../assets/img/avada-nightclub-resident-profile.jpg);
+        background-image: url(../../../assets/img/avada-nightclub-resident-profile.jpg);
         background-position: center;
         background-size: cover;
     }
 
     .guest-dj{
-        background-image: url(../../assets/img/avada-nightclub-lisahouse-inset-new.jpg);
+        background-image: url(../../../assets/img/avada-nightclub-lisahouse-inset-new.jpg);
         background-position-x: center;
         background-position-y: top;
         background-size: cover;
