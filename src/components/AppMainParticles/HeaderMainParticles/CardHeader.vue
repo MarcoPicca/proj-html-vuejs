@@ -2,19 +2,19 @@
     <div class="cardbox">
         <section class="container-card dance-lounge">
             <h4 class="text">dance lounge</h4>
-            <hr class="line-blue"></hr>
+            <div class="line-blue"></div>
         </section>
         <section class="container-card rooftop-bar">
             <h4 class="text">rooftop bar</h4>
-            <hr class="line-red"></hr>
+            <div class="line-red"></div>
         </section>
         <section class="container-card vip-lounge">
             <h4 class="text">vip lounge</h4>
-            <hr class="line-gold"></hr>
+            <div class="line-gold"></div>
         </section>
         <section class="container-card resident-dj">
             <h4 class="text">resident dj</h4>
-            <hr class="line-blue"></hr>
+            <div class="line-blue"></div>
         </section>
     </div>
 </template>
@@ -40,6 +40,10 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: end;
+    }
+
+    .container-card:hover{
+        opacity: .6;
     }
 
     .dance-lounge{
@@ -71,12 +75,12 @@ export default {
         color: white;
         padding-left: 2rem;
         margin-bottom: 1.6rem;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .line-blue{
         width: 55%;
-        height: 1px;
+        height: 2px;
         color: #46b1fd;
         background-color: #46b1fd;
         margin-bottom: 2.3rem;
@@ -84,7 +88,7 @@ export default {
 
     .line-red{
         width: 55%;
-        height: 1px;
+        height: 2px;
         color: #f63c81;
         background-color: #f63c81;
         margin-bottom: 2.3rem;
@@ -92,7 +96,7 @@ export default {
 
     .line-gold{
         width: 55%;
-        height: 1px;
+        height: 2px;
         color: gold;
         background-color: gold;
         margin-bottom: 2.3rem;

@@ -46,8 +46,8 @@ export default {
 
     h3{
         color: white;
-        font-size: 50px;
-        margin-left: 14rem;
+        font-size: 58px;
+        margin-left: 18.2rem;
     }
 
     .container-button{
@@ -66,5 +66,9 @@ export default {
         border: none;
         margin-top: 2rem;
         font-weight: bolder;
+    }
+
+    button:hover{
+        background-color: #46b1fd;
     }
 </style>

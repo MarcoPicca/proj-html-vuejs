@@ -33,7 +33,10 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
+
+    
 
     h4{
         text-transform: uppercase;
@@ -57,5 +60,9 @@ export default {
         border: none;
         margin-top: 2rem;
         font-weight: bolder;
+    }
+
+    button:hover{
+        background-color: #46b1fd;
     }
 </style>

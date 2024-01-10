@@ -61,13 +61,21 @@ export default {
     }
 
     h3{
+        width: 100%;
+        height: 15px;
+        padding: .3rem;
         color: #f63c81;
         text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: .3rem;
     }
 
     h4{
+        width: 100%;
+        height: 15px;
+        padding: .3rem;
         color: white;
-        font-size: 13px;
+        font-size: 10px;
         font-weight: bold;
     }
 

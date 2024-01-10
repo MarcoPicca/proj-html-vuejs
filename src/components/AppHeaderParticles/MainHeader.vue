@@ -64,7 +64,9 @@ export default {
         top: 124px;
     }
 
-    
+    button:hover{
+        background-color: #46b1fd;
+    }
 
     .img-footer-header{
         width: 17%;
