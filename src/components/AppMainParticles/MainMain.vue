@@ -5,19 +5,29 @@
 
         <CardsMain />
 
-        <button>rsvp now</button>
+        <button @click="showForm = true">rsvp now</button>
+
+        <Form v-if="showForm" @closeForm="showForm = false"/>
     </section>
 </template>
 
 
 <script>
+import Form from '../AppHeaderParticles/Form.vue';
 import CardsMain from './MainMainParticles/CardsMain.vue';
 
 export default {
     name: 'MainMain',
 
+    data() {
+     return{
+        showForm: false
+     };
+    },
+
     components: {
         CardsMain,
+        Form
     }
 }
 </script>

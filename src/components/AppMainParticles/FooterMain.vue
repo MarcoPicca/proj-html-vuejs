@@ -3,17 +3,30 @@
         <div class="container-content-footer-main">
             <h4>become a vip tonight</h4>
             <h3>exclusive vip lounge</h3>
+            <Form v-if="showForm" @closeForm="showForm = false" />
         </div>
         <div class="container-button">
-            <button>join the club</button>
+            <button @click="showForm = true">join the club</button>    
         </div>
+
+
     </section>
 </template>
 
 
 <script>
+import Form from '../AppHeaderParticles/Form.vue';
+
 export default {
-    
+    data() {
+     return{
+        showForm: false
+     };
+    },
+
+    components: {
+        Form
+    }
 }
 </script>
 

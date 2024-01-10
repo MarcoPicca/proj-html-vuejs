@@ -6,8 +6,11 @@
 
         <div class="container-content-header">
             <h2>making memories all night long</h2>
-            <button>become a vip</button>
+            <button class="toform" @click="showForm = true">become a vip</button>
         </div>
+
+        <Form v-if="showForm" @closeForm="showForm = false"/>
+
         <img class="img-footer-header" src="../../assets/img/avada-nightclub-play-showreel-200x47.png" alt="">
     </section>
 </template>
@@ -16,12 +19,20 @@
 
 <script>
 import ExtraIcon from './ExtraIcon.vue';
+import Form from './Form.vue';
 
 export default {
     name: 'MainHeader',
 
+    data() {
+     return{
+        showForm: false
+     };
+    },
+  
     components: {
-        ExtraIcon
+        ExtraIcon,
+        Form
     }
 }
 </script>
@@ -61,7 +72,7 @@ export default {
         font-size: 40px;
     }
 
-    button{
+    button.toform{
         width: 140px;
         height: 37px;
         border: none;
@@ -73,11 +84,18 @@ export default {
         top: 124px;
     }
 
+    
+
     button:hover{
         background-color: #46b1fd;
     }
 
     .img-footer-header{
         width: 17%;
+    }
+
+    .img-footer-header:hover{
+        scale: 1.2;
+        transition: .3s;
     }
 </style>

@@ -44,6 +44,8 @@ export default {
 
     .container-card:hover{
         opacity: .6;
+        scale: 1.1;
+        transition: .3s;
     }
 
     .dance-lounge{
