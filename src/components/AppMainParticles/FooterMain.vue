@@ -21,11 +21,12 @@ export default {
 <style lang="scss" scoped>
     .container-footer-main{
         width: 100%;
-        height: 260px;
+        height: 220px;
         background-image: url(../../assets/img/avada-nightclub-vip-hero-new.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
+        
     }
 
     .container-content-footer-main{

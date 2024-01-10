@@ -4,27 +4,27 @@
             <div class="col mt">
                 <h4>events</h4>
                 <article class="content-footer">
-                    <img src="../assets/img/avada-nightclub-events-6-66x66.jpg" alt="">
+                    <img class="img-scale" src="../assets/img/avada-nightclub-events-6-66x66.jpg" alt="">
                     <div class="content-text">
                         <h3>DJ Fusion</h3>
                         <h5>August 19, 2024 @ 8.00 pm</h5>
                     </div>
                 </article>
                 <article class="content-footer">
-                    <img src="../assets/img/avada-nightclub-events-5-66x66.jpg" alt="">
+                    <img class="img-scale" src="../assets/img/avada-nightclub-events-5-66x66.jpg" alt="">
                     <div class="content-text">
                         <h3>House Nation</h3>
                         <h5>August 19, 2024 @ 8.00 pm</h5>
                     </div>
                 </article>
                 <article class="content-footer mb">
-                    <img src="../assets/img/avada-nightclub-events-4-66x66.jpg" alt="">
+                    <img class="img-scale" src="../assets/img/avada-nightclub-events-4-66x66.jpg" alt="">
                     <div class="content-text">
                         <h3>Jazz Night</h3>
                         <h5>August 19, 2024 @ 8.00 pm</h5>
                     </div>
                 </article>
-                <p>View All Events</p>
+                <h5 class="blue">View All Events</h5>
             </div>
             <div class="col">
                 <img class="mb" src="../assets/img/avada-nightclub-logo-2x-300x99.png" alt="">
@@ -36,10 +36,10 @@
                     <h5>+1 (555) 000 000</h5>
                 </div>
                 <div class="box-icon">
-                    <i class="fa-brands fa-facebook-f fa-sm" style="color: gray;"></i>
-                    <i class="fa-brands fa-twitter fa-sm" style="color: gray;"></i>
-                    <i class="fa-brands fa-instagram fa-sm" style="color: gray;"></i>
-                    <i class="fa-brands fa-youtube fa-sm" style="color: gray;"></i>
+                    <i class="fa-brands fa-facebook-f fa-sm icon" style="color: gray;"></i>
+                    <i class="fa-brands fa-twitter fa-sm icon" style="color: gray;"></i>
+                    <i class="fa-brands fa-instagram fa-sm icon" style="color: gray;"></i>
+                    <i class="fa-brands fa-youtube fa-sm icon" style="color: gray;"></i>
                 </div>
             </div>
             <div class="col mt">
@@ -47,6 +47,13 @@
                 <img class="img" src="../assets/img/avada-nightclub-footer-rooftop-400x171.jpg" alt="">
                 <img class="img" src="../assets/img/avada-nightclub-footer-dancelounge-400x171.jpg" alt="">
             </div>
+        </div>
+        <div class="container-copyright">
+            <div class="empty-space"></div>
+            <div class="copyright">
+                © Copyright 2012-2021 | Avada Theme by <h5 class="blue">ThemeFusion</h5> | All Rights Reserved | Powered by <h5 class="blue big-mr">Cataclism</h5>
+            </div>
+            <button><i class="fa-solid fa-chevron-up fa-xl" style="color: #ffffff;"></i></button>
         </div>
     </section>
 </template>
@@ -68,6 +75,7 @@ export default {
         background-size: cover;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .container-column{
@@ -75,6 +83,7 @@ export default {
         height: 70%;
         display: flex;
         margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .col{
@@ -88,7 +97,8 @@ export default {
     h4{
         color: white;
         text-transform: uppercase;
-        font-weight: lighter;
+        font-weight: bold;
+        font-size: 17px;
         margin-bottom: 2rem;
     }
 
@@ -97,6 +107,11 @@ export default {
         height: 68px;
         margin-bottom: 1.5rem;
         display: flex;
+    }
+
+    .content-footer:hover .img-scale{
+        scale: 1.2;
+        transition: .3s;
     }
 
     .content-text{
@@ -111,10 +126,20 @@ export default {
         margin-top: .3rem;
         margin-bottom: .6rem;
     }
+
+    h3:hover{
+        color: #f63c81;
+    }
     
     h5{
         color: gray;
         margin-bottom: .2rem;
+        margin-left: .3rem;
+        margin-right: .3rem;
+    }
+
+    h5:hover{
+        color: white;
     }
 
     p{
@@ -151,5 +176,43 @@ export default {
     .img{
         width: 87%;
         margin-bottom: 2rem;
+    }
+
+    .img:hover{
+        scale: 1.2;
+        transition: .3s;
+    }
+
+    .container-copyright{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        color:  gray;
+    }
+
+    .copyright{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(65, 65, 65);
+        margin-right: 2rem;
+    }
+
+    .empty-space{
+        width: 6%;
+        height: 100%;
     }
 </style>

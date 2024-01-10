@@ -33,10 +33,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
     }
-
-    
 
     h4{
         text-transform: uppercase;

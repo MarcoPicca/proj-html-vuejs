@@ -56,6 +56,11 @@ export default {
         margin-bottom: 2rem;
     }
 
+    .card:hover{
+        scale: 1.2;
+        transition: .3s;
+    }
+
     .img-card{
         width: 100%;
     }
