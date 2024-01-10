@@ -53,7 +53,7 @@
             <div class="copyright">
                 © Copyright 2012-2021 | Avada Theme by <h5 class="blue">ThemeFusion</h5> | All Rights Reserved | Powered by <h5 class="blue big-mr">Cataclism</h5>
             </div>
-            <button><i class="fa-solid fa-chevron-up fa-xl" style="color: #ffffff;"></i></button>
+            <button @click="TopScroll"><i class="fa-solid fa-chevron-up fa-xl" style="color: #ffffff;"></i></button>
         </div>
     </section>
 </template>
@@ -62,6 +62,16 @@
 <script>
 export default {
    name: 'AppFooter',
+
+   methods: {
+        TopScroll() {
+            console.log('yes');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
+   },
 }
 </script>
 

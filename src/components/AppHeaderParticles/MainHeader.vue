@@ -1,6 +1,9 @@
 <template>
     <section class="container">
         <img class="img-header" src="../../assets/img/avada-nightclub-homepage-image-600x298.png" alt="">
+        
+        <ExtraIcon />
+
         <div class="container-content-header">
             <h2>making memories all night long</h2>
             <button>become a vip</button>
@@ -12,8 +15,14 @@
 
 
 <script>
+import ExtraIcon from './ExtraIcon.vue';
+
 export default {
     name: 'MainHeader',
+
+    components: {
+        ExtraIcon
+    }
 }
 </script>
 

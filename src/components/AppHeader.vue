@@ -30,8 +30,8 @@
   #img-bg-header{
     background-image: url(../assets/img/avada-nightclub-home-hero.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 900px;
+    height: 940px;
   }
 </style>
